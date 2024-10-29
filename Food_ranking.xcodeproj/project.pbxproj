@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25CA68142CCCD0F10010283A /* Food_rankingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CA68132CCCD0F10010283A /* Food_rankingApp.swift */; };
+		25CA68512CCCFEC40010283A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 25CA68502CCCFEC40010283A /* GoogleMobileAds */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25CA68212CCCD0F20010283A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA68082CCCD0F10010283A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CA680F2CCCD0F10010283A;
+			remoteInfo = Food_ranking;
+		};
+		25CA682B2CCCD0F20010283A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA68082CCCD0F10010283A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CA680F2CCCD0F10010283A;
+			remoteInfo = Food_ranking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25CA68102CCCD0F10010283A /* Food_ranking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_ranking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CA68132CCCD0F10010283A /* Food_rankingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_rankingApp.swift; sourceTree = "<group>"; };
+		25CA68202CCCD0F20010283A /* Food_rankingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Food_rankingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CA682A2CCCD0F20010283A /* Food_rankingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Food_rankingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		25CA68122CCCD0F10010283A /* Food_ranking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Food_ranking;
+			sourceTree = "<group>";
+		};
+		25CA68232CCCD0F20010283A /* Food_rankingTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Food_rankingTests;
+			sourceTree = "<group>";
+		};
+		25CA682D2CCCD0F20010283A /* Food_rankingUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Food_rankingUITests;
+			sourceTree = "<group>";
+		};
+		25CA683F2CCCD1070010283A /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		25CA68402CCCD1120010283A /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25CA68412CCCD1270010283A /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25CA680D2CCCD0F10010283A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA68512CCCFEC40010283A /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA681D2CCCD0F20010283A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA68272CCCD0F20010283A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25CA68072CCCD0F10010283A = {
+			isa = PBXGroup;
+			children = (
+				25CA68132CCCD0F10010283A /* Food_rankingApp.swift */,
+				25CA68402CCCD1120010283A /* Models */,
+				25CA68412CCCD1270010283A /* Views */,
+				25CA683F2CCCD1070010283A /* ViewModels */,
+				25CA68122CCCD0F10010283A /* Food_ranking */,
+				25CA68232CCCD0F20010283A /* Food_rankingTests */,
+				25CA682D2CCCD0F20010283A /* Food_rankingUITests */,
+				25CA68112CCCD0F10010283A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25CA68112CCCD0F10010283A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25CA68102CCCD0F10010283A /* Food_ranking.app */,
+				25CA68202CCCD0F20010283A /* Food_rankingTests.xctest */,
+				25CA682A2CCCD0F20010283A /* Food_rankingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25CA680F2CCCD0F10010283A /* Food_ranking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CA68342CCCD0F20010283A /* Build configuration list for PBXNativeTarget "Food_ranking" */;
+			buildPhases = (
+				25CA680C2CCCD0F10010283A /* Sources */,
+				25CA680D2CCCD0F10010283A /* Frameworks */,
+				25CA680E2CCCD0F10010283A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25CA68122CCCD0F10010283A /* Food_ranking */,
+				25CA683F2CCCD1070010283A /* ViewModels */,
+				25CA68402CCCD1120010283A /* Models */,
+				25CA68412CCCD1270010283A /* Views */,
+			);
+			name = Food_ranking;
+			packageProductDependencies = (
+				25CA68502CCCFEC40010283A /* GoogleMobileAds */,
+			);
+			productName = Food_ranking;
+			productReference = 25CA68102CCCD0F10010283A /* Food_ranking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25CA681F2CCCD0F20010283A /* Food_rankingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CA68372CCCD0F20010283A /* Build configuration list for PBXNativeTarget "Food_rankingTests" */;
+			buildPhases = (
+				25CA681C2CCCD0F20010283A /* Sources */,
+				25CA681D2CCCD0F20010283A /* Frameworks */,
+				25CA681E2CCCD0F20010283A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CA68222CCCD0F20010283A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				25CA68232CCCD0F20010283A /* Food_rankingTests */,
+			);
+			name = Food_rankingTests;
+			packageProductDependencies = (
+			);
+			productName = Food_rankingTests;
+			productReference = 25CA68202CCCD0F20010283A /* Food_rankingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25CA68292CCCD0F20010283A /* Food_rankingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CA683A2CCCD0F20010283A /* Build configuration list for PBXNativeTarget "Food_rankingUITests" */;
+			buildPhases = (
+				25CA68262CCCD0F20010283A /* Sources */,
+				25CA68272CCCD0F20010283A /* Frameworks */,
+				25CA68282CCCD0F20010283A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CA682C2CCCD0F20010283A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				25CA682D2CCCD0F20010283A /* Food_rankingUITests */,
+			);
+			name = Food_rankingUITests;
+			packageProductDependencies = (
+			);
+			productName = Food_rankingUITests;
+			productReference = 25CA682A2CCCD0F20010283A /* Food_rankingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25CA68082CCCD0F10010283A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					25CA680F2CCCD0F10010283A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					25CA681F2CCCD0F20010283A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 25CA680F2CCCD0F10010283A;
+					};
+					25CA68292CCCD0F20010283A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 25CA680F2CCCD0F10010283A;
+					};
+				};
+			};
+			buildConfigurationList = 25CA680B2CCCD0F10010283A /* Build configuration list for PBXProject "Food_ranking" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25CA68072CCCD0F10010283A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				25CA684F2CCCFEC40010283A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 25CA68112CCCD0F10010283A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25CA680F2CCCD0F10010283A /* Food_ranking */,
+				25CA681F2CCCD0F20010283A /* Food_rankingTests */,
+				25CA68292CCCD0F20010283A /* Food_rankingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25CA680E2CCCD0F10010283A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA681E2CCCD0F20010283A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA68282CCCD0F20010283A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25CA680C2CCCD0F10010283A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA68142CCCD0F10010283A /* Food_rankingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA681C2CCCD0F20010283A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA68262CCCD0F20010283A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25CA68222CCCD0F20010283A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25CA680F2CCCD0F10010283A /* Food_ranking */;
+			targetProxy = 25CA68212CCCD0F20010283A /* PBXContainerItemProxy */;
+		};
+		25CA682C2CCCD0F20010283A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25CA680F2CCCD0F10010283A /* Food_ranking */;
+			targetProxy = 25CA682B2CCCD0F20010283A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25CA68322CCCD0F20010283A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25CA68332CCCD0F20010283A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25CA68352CCCD0F20010283A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Food_ranking/Preview Content\"";
+				DEVELOPMENT_TEAM = 63WJWVBMX2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Food-ranking-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-ranking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25CA68362CCCD0F20010283A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Food_ranking/Preview Content\"";
+				DEVELOPMENT_TEAM = 63WJWVBMX2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Food-ranking-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-ranking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25CA68382CCCD0F20010283A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63WJWVBMX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-rankingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food_ranking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Food_ranking";
+			};
+			name = Debug;
+		};
+		25CA68392CCCD0F20010283A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63WJWVBMX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-rankingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food_ranking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Food_ranking";
+			};
+			name = Release;
+		};
+		25CA683B2CCCD0F20010283A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63WJWVBMX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-rankingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Food_ranking;
+			};
+			name = Debug;
+		};
+		25CA683C2CCCD0F20010283A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63WJWVBMX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-rankingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Food_ranking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25CA680B2CCCD0F10010283A /* Build configuration list for PBXProject "Food_ranking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CA68322CCCD0F20010283A /* Debug */,
+				25CA68332CCCD0F20010283A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CA68342CCCD0F20010283A /* Build configuration list for PBXNativeTarget "Food_ranking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CA68352CCCD0F20010283A /* Debug */,
+				25CA68362CCCD0F20010283A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CA68372CCCD0F20010283A /* Build configuration list for PBXNativeTarget "Food_rankingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CA68382CCCD0F20010283A /* Debug */,
+				25CA68392CCCD0F20010283A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CA683A2CCCD0F20010283A /* Build configuration list for PBXNativeTarget "Food_rankingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CA683B2CCCD0F20010283A /* Debug */,
+				25CA683C2CCCD0F20010283A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25CA684F2CCCFEC40010283A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25CA68502CCCFEC40010283A /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25CA684F2CCCFEC40010283A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 25CA68082CCCD0F10010283A /* Project object */;
+}
