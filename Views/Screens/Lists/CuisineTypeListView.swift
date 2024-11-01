@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CuisineTypeListView: View {
     var body: some View {
-        Text("CuisineTypeListView")
+        Text("使わない")
     }
 }
 

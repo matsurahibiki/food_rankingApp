@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedView = 0
     init() {
         let appearance = UITabBarAppearance()
         appearance.shadowColor = .red
@@ -15,6 +16,7 @@ struct ContentView: View {
         UITabBar.appearance().standardAppearance = appearance
     }
     var body: some View {
+
         ZStack() {
             TabView {
                 HomeView()
@@ -31,7 +33,7 @@ struct ContentView: View {
                     }
                     .tag(1)
                 
-                StoreListView()
+                DishListView()
                     .tabItem {
                         Image(systemName: "list.bullet")
                         Text("shop")
