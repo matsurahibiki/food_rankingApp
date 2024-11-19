@@ -32,14 +32,14 @@ struct ContentView: View {
                         Text("Ranking")
                     }
                     .tag(1)
-                
-                DishListView()
+                ListView()
                     .tabItem {
                         Image(systemName: "list.bullet")
                         Text("shop")
                     }
                     .tag(2)
             }
+            .background(Color.white)
         }
     }
 }
