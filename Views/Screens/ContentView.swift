@@ -11,9 +11,9 @@ struct ContentView: View {
     @State var selectedView = 0
     init() {
         let appearance = UITabBarAppearance()
-        appearance.shadowColor = .red
-        appearance.backgroundColor = UIColor.cyan
-        UITabBar.appearance().standardAppearance = appearance
+        appearance.backgroundColor = .white // 完全な白を指定
+        UITabBar.appearance().standardAppearance = appearance   // 通常時の見た目を統一
+        UITabBar.appearance().scrollEdgeAppearance = appearance // スクロール時の見た目も統一
     }
     var body: some View {
 
@@ -25,7 +25,7 @@ struct ContentView: View {
                         Text("ホーム")
                     }
                     .tag(0)
-                
+
                 RankingView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
@@ -35,11 +35,11 @@ struct ContentView: View {
                 ListView()
                     .tabItem {
                         Image(systemName: "list.bullet")
-                        Text("shop")
+                        Text("リスト")
                     }
                     .tag(2)
             }
-            .background(Color.white)
+//            .background(Color.white)
         }
     }
 }

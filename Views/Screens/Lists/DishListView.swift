@@ -59,7 +59,7 @@ struct DishListView: View {
                 HStack {
                     Text("カテゴリ")
                         .subheadingFont()
-                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                        .padding(EdgeInsets(top: 5, leading: 16, bottom: 0, trailing: 16))
                     Spacer()
                     // カテゴリ選択のピッカー
                     Picker("カテゴリー", selection: $selectedCategory) {

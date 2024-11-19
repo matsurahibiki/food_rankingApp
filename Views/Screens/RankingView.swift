@@ -58,8 +58,9 @@ struct RankingView: View {
                             ForEach(0..<2) { _ in
                                 VStack(alignment: .leading, spacing: 8) {
                                     Text("トップ5ランキング")
-                                    //                        .font(.custom("Plus Jakarta Sans", size: 18).weight(.bold))
                                         .subheadingFont()
+                                        .frame(maxWidth: .infinity)
+                                        .padding(0)
                                     // .padding(.bottom, 4)
                                     Divider()
                                     ForEach(1...5, id: \.self) { rank in
@@ -77,18 +78,20 @@ struct RankingView: View {
                                 .padding(16)
                                 .background(Color.white)
                                 .cornerRadius(12)
-                                .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+                                .shadow(color: Color.black.opacity(0.1), radius: 3, x: 3, y: 3)
                                 .onTapGesture {
                                     // ここにタップ時のイベントを記述
                                     print("ランキングがタップされました")
                                 }
+
                             }
                         }
+                        .padding(5)
                     }
                     //                    }
                 }
-                .padding(16)
-                .background(Color.black.opacity(0.1))
+                .padding(8)
+//                .background(Color.black.opacity(0.1))
             }
         }
     }

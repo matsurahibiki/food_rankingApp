@@ -16,7 +16,6 @@ struct StoreListView: View {
         "store5": Store(name: "福岡ラーメン", genre: "ラーメン", location: "福岡県福岡市", hours: "10:00 - 20:00", rating: 88)
     ]
 
-    // Storeデータ構造
     struct Store {
         let name: String
         let genre: String
@@ -25,22 +24,19 @@ struct StoreListView: View {
         let rating: Int
     }
 
-
     var body: some View {
         List {
-            // ジャンルごとに店舗をグループ化
             let groupedStores = Dictionary(grouping: stores.keys) { storeID in
                 stores[storeID]?.genre ?? "不明"
             }
 
-            // ジャンルごとのセクションを作成
             ForEach(groupedStores.keys.sorted(), id: \.self) { genre in
                 Section(header: Text(genre)) {
                     if let storeIDs = groupedStores[genre] {
                         ForEach(storeIDs, id: \.self) { storeID in
                             if let store = stores[storeID] {
                                 VStack(alignment: .leading, spacing: 8) {
-                                    Text(store.name) // 店舗名
+                                    Text(store.name)
                                         .font(.headline)
                                     Text("所在地: \(store.location)")
                                         .font(.subheadline)
@@ -61,11 +57,10 @@ struct StoreListView: View {
             }
         }
         .listStyle(PlainListStyle())
-        .background(Color.white)
-
-
+        .background(Color.white) // リスト背景を白で指定
     }
 }
+
 
 #Preview {
     ContentView()

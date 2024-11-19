@@ -9,33 +9,45 @@ import SwiftUI
 
 struct ListView: View {
     @State private var selectedTab = "store"
-    var body: some View {
-        VStack {
-            // 上部のカスタムタブバー
-            HStack {
-                TabButton(title: "store", selectedTab: $selectedTab)
-                TabButton(title: "dish", selectedTab: $selectedTab)
-            }
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(Color.blue)
+   @Namespace private var tabNamespace // Namespaceを定義
 
-            Spacer() // 上部にタブバーを固定するためのスペーサー
+   var body: some View {
+       VStack(spacing: 0) {
+           // カスタムタブバー
+           HStack {
+               TabButton(title: "Store", isSelected: selectedTab == "store", namespace: tabNamespace) {
+                   selectedTab = "store"
+               }
+               TabButton(title: "Dish", isSelected: selectedTab == "dish", namespace: tabNamespace) {
+                   selectedTab = "dish"
+               }
+           }
+           .frame(maxWidth: .infinity)
+           .background(Color.white)
+           .overlay(
+               Divider()
+                   .background(Color.gray.opacity(0.5)),
+               alignment: .bottom
+           )
 
-            // 選択されたタブに応じて表示するビューを切り替え
-            if selectedTab == "store" {
-                StoreListView()
-            } else if selectedTab == "dish" {
-                DishListView()
-            }
+           // 選択されたタブに応じて表示を切り替え
+//           Spacer()
+           if selectedTab == "store" {
+               StoreListView()
 
-            Spacer()
-        }
-
-    }
+           } else if selectedTab == "dish" {
+               DishListView()
+           }
+//           Spacer()
+       }
+       .padding(0)
+//       .background(Color(.systemGroupedBackground))
+       .background(Color.white)
+//       .edgesIgnoringSafeArea(.top)
+   }
 }
 
 #Preview {
-    //    ContentView()
-    ListView()
+        ContentView()
+//    ListView()
 }
