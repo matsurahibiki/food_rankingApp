@@ -26,7 +26,7 @@ struct HomeView: View {
                     Text("Ranking")
                     //                    .font(.custom("Plus Jakarta Sans", size: 22).weight(.bold))
                         .headingFont()
-                        .padding(EdgeInsets(top: 20, leading: 16, bottom: 2, trailing: 16))
+                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     Spacer()
                 }
 

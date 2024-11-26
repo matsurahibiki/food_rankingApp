@@ -17,29 +17,58 @@ struct ContentView: View {
     }
     var body: some View {
 
-        ZStack() {
-            TabView {
-                HomeView()
-                    .tabItem {
-                        Image(systemName: "house")
-                        Text("ホーム")
-                    }
-                    .tag(0)
+        NavigationStack() {
+            ZStack() {
+                TabView(selection: $selectedView) {
+                    HomeView()
+                        .tabItem {
+                            Image(systemName: "house")
+                            Text("ホーム")
+                        }
+                        .tag(0)
+//                    Text("登録")
+//                        .tabItem {
+//                            Image(systemName: "plus")
+//
+//                            Text("登録")
+//                        }
+//                        .tag(3)
 
-                RankingView()
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                        Text("Ranking")
-                    }
-                    .tag(1)
-                ListView()
-                    .tabItem {
-                        Image(systemName: "list.bullet")
-                        Text("リスト")
-                    }
-                    .tag(2)
+                    RankingView()
+                        .tabItem {
+                            Image(systemName: "magnifyingglass")
+                            Text("Ranking")
+                        }
+                        .tag(1)
+                    ListView()
+                        .tabItem {
+                            Image(systemName: "list.bullet")
+                            Text("リスト")
+                        }
+                        .tag(2)
+                }
+                //            .background(Color.white)
             }
-//            .background(Color.white)
+            .toolbar{
+                if (selectedView == 1) {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            print("ボタンがタップされました")
+                        }) {
+                            Image(systemName: "minus")
+                        }
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        print("ボタンがタップされました")
+                    }) {
+//                        Image(systemName: "plus")
+                        Text("登録")
+                            .padding(0)
+                    }
+                }
+            }
         }
     }
 }

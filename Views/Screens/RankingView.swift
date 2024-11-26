@@ -28,26 +28,15 @@ struct RankingView: View {
                                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                             //                            .frame(alignment: .center)
                             Spacer()
-                        }
-                    }
-                    VStack(alignment: .leading, spacing: 0) {
-                        //                    ForEach
-                        // categoryListのキーのプルダウンメニューとそのキーのvalueのプルダウンメニューを配置
-
-                        Picker("選択してください", selection: $selectedOption) {
-                            ForEach(categoryList.indices, id: \.self) { index in
-                                Text(categoryList[index]).tag(index)    // tagをカテゴリIDにする
-                                //ToDo tagの値が変更されたら動的に表示するランキングを変更
+                            Picker("選択してください", selection: $selectedOption) {
+                                ForEach(categoryList.indices, id: \.self) { index in
+                                    Text(categoryList[index]).tag(index)    // tagをカテゴリIDにする
+                                    //ToDo tagの値が変更されたら動的に表示するランキングを変更
+                                }
                             }
+                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                         }
-                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                        Spacer()
-                        //                    .pickerStyle(WheelPickerStyle())
-                        //                    .frame(maxWidth: .infinity)
                     }
-//                    VStack(alignment: .leading) {
-//                        Spacer()
-//                    }
 
                 }
                 .frame(maxWidth: .infinity, maxHeight: 50)
@@ -78,7 +67,7 @@ struct RankingView: View {
                                 .padding(16)
                                 .background(Color.white)
                                 .cornerRadius(12)
-                                .shadow(color: Color.black.opacity(0.1), radius: 3, x: 3, y: 3)
+                                .shadow(color: Color.black.opacity(0.1), radius: 5)
                                 .onTapGesture {
                                     // ここにタップ時のイベントを記述
                                     print("ランキングがタップされました")
