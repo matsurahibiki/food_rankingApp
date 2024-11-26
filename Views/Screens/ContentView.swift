@@ -11,34 +11,63 @@ struct ContentView: View {
     @State var selectedView = 0
     init() {
         let appearance = UITabBarAppearance()
-        appearance.shadowColor = .red
-        appearance.backgroundColor = UIColor.cyan
-        UITabBar.appearance().standardAppearance = appearance
+        appearance.backgroundColor = .white // 完全な白を指定
+        UITabBar.appearance().standardAppearance = appearance   // 通常時の見た目を統一
+        UITabBar.appearance().scrollEdgeAppearance = appearance // スクロール時の見た目も統一
     }
     var body: some View {
 
-        ZStack() {
-            TabView {
-                HomeView()
-                    .tabItem {
-                        Image(systemName: "house")
-                        Text("ホーム")
+        NavigationStack() {
+            ZStack() {
+                TabView(selection: $selectedView) {
+                    HomeView()
+                        .tabItem {
+                            Image(systemName: "house")
+                            Text("ホーム")
+                        }
+                        .tag(0)
+//                    Text("登録")
+//                        .tabItem {
+//                            Image(systemName: "plus")
+//
+//                            Text("登録")
+//                        }
+//                        .tag(3)
+
+                    RankingView()
+                        .tabItem {
+                            Image(systemName: "magnifyingglass")
+                            Text("Ranking")
+                        }
+                        .tag(1)
+                    ListView()
+                        .tabItem {
+                            Image(systemName: "list.bullet")
+                            Text("リスト")
+                        }
+                        .tag(2)
+                }
+                //            .background(Color.white)
+            }
+            .toolbar{
+                if (selectedView == 1) {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            print("ボタンがタップされました")
+                        }) {
+                            Image(systemName: "minus")
+                        }
                     }
-                    .tag(0)
-                
-                RankingView()
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                        Text("Ranking")
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        print("ボタンがタップされました")
+                    }) {
+//                        Image(systemName: "plus")
+                        Text("登録")
+                            .padding(0)
                     }
-                    .tag(1)
-                
-                DishListView()
-                    .tabItem {
-                        Image(systemName: "list.bullet")
-                        Text("shop")
-                    }
-                    .tag(2)
+                }
             }
         }
     }
