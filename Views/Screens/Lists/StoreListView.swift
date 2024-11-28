@@ -24,6 +24,7 @@ struct StoreListView: View {
         let rating: Int
     }
 
+
     var body: some View {
         List {
             let groupedStores = Dictionary(grouping: stores.keys) { storeID in

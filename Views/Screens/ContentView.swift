@@ -26,14 +26,6 @@ struct ContentView: View {
                             Text("ホーム")
                         }
                         .tag(0)
-//                    Text("登録")
-//                        .tabItem {
-//                            Image(systemName: "plus")
-//
-//                            Text("登録")
-//                        }
-//                        .tag(3)
-
                     RankingView()
                         .tabItem {
                             Image(systemName: "magnifyingglass")
@@ -46,28 +38,39 @@ struct ContentView: View {
                             Text("リスト")
                         }
                         .tag(2)
+//                    reviewingView()
+//                        .tabItem {
+//                            Image(systemName: "pencil")
+//                            Text("レビュー")
+//                        }
+//                        .tag(3)
                 }
                 //            .background(Color.white)
             }
             .toolbar{
-                if (selectedView == 1) {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: {
-                            print("ボタンがタップされました")
-                        }) {
-                            Image(systemName: "minus")
-                        }
-                    }
-                }
+                //                if (selectedView == 1) {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        print("ボタンがタップされました")
-                    }) {
-//                        Image(systemName: "plus")
-                        Text("登録")
+                    //                        Button(action: {
+                    //                            print("ボタンがタップされました")
+                    //                        }) {
+                    //                            Image(systemName: "minus")
+                    //                        }
+                    //                    }
+                    NavigationLink(destination: reviewingView()) {
+                        Text("レビュー")
                             .padding(0)
                     }
                 }
+                //                }
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button(action: {
+//                        print("ボタンがタップされました")
+//                    }) {
+//                        //                        Image(systemName: "plus")
+//                        Text("登録")
+//                            .padding(0)
+//                    }
+//                }
             }
         }
     }
