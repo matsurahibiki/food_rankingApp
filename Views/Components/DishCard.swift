@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DishCard: View {
-    @Binding var dish: Dish
+    @Binding var dish: DishViewModel
     @FocusState.Binding var isFocused: Bool
     @State var selectedGenre: String = "和食"
     @State var selectedSubgenre: String = "その他"

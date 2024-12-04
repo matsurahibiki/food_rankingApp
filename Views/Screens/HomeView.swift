@@ -54,7 +54,7 @@ struct HomeView: View {
                             .padding(16)
                             .background(Color.white)
                             .cornerRadius(12)
-                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 2, y: 2)
                             .onTapGesture {
                                 // ここにタップ時のイベントを記述
                                 print("ランキングがタップされました")

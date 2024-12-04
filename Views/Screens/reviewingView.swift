@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct reviewingView: View {
-    @State private var dish_card: [Dish] =  [Dish(name: "", price: 0,  score: 100, comment: "")]
+    @State private var dish_card: [DishViewModel] =  [DishViewModel()]
     @State var selectedStore: Store = Store(name: "", genre: "", location: "", hours: "", rating: 100)
     @FocusState private var isFocused: Bool
     var body: some View {
-        ScrollView {
-            VStack(alignment: .center) {
-                VStack(spacing: 0) {
-                    Text("店名 : \(selectedStore.name)")
-                    NavigationLink {
-                        SelectStoreView(selectedStore: $selectedStore)
-                    } label: {
-                        Text("店を選択")
-                    }
-                }
 
-                DatePicker("日付", selection: .constant(Date()), displayedComponents: .date)
-                    .padding()
+        VStack(alignment: .center) {
+            VStack(spacing: 0) {
+                Text("店名 : \(selectedStore.name)")
+                NavigationLink {
+                    SelectStoreView(selectedStore: $selectedStore)
+                } label: {
+                    Text("店を選択")
+                }
+            }
+
+            DatePicker("日付", selection: .constant(Date()), displayedComponents: .date)
+                .padding()
+            ScrollView {
                 ForEach($dish_card.indices, id: \.self) { index in
                     DishCard(dish: $dish_card[index], isFocused: $isFocused)
                         .overlay{
@@ -65,12 +66,12 @@ struct reviewingView: View {
 
     private func addDish() {
         // 最後に追加したDishのnameプロパティが空の場合は追加しない
-//        if (dish_card.count > 0) {
-//            if (dish_card[dish_card.count-1].name == "") {
-//                return
-//            }
-//        }
-        dish_card.append(Dish(name: "", price: 0, score: 100, comment: ""))
+        //        if (dish_card.count > 0) {
+        //            if (dish_card[dish_card.count-1].name == "") {
+        //                return
+        //            }
+        //        }
+        dish_card.append(DishViewModel())
     }
 }
 
