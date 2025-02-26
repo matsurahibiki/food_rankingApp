@@ -20,10 +20,19 @@ import RealmSwift
 
 
 class Dish: Object {
+    /*
+        プロパティ
+        id: ユニークなID
+        name: 料理名
+        price: 価格(Int)
+        score: 点数(Int)　0~100
+        comment: コメント
+        image: 画像
+     */
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
     @objc dynamic var price: Int = 0
-    @objc dynamic var score: Double = 0
+    @objc dynamic var Int: Double = 0
     @objc dynamic var comment: String = ""
     @objc dynamic var image: Data = Data()
 }
