@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25B53D352D6DBFE200EA0A6D /* Register_RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B53D342D6DBFE200EA0A6D /* Register_RestaurantView.swift */; };
 		25CA68142CCCD0F10010283A /* Food_rankingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CA68132CCCD0F10010283A /* Food_rankingApp.swift */; };
 		25CA68512CCCFEC40010283A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 25CA68502CCCFEC40010283A /* GoogleMobileAds */; };
 		25E541C92CFF3943003860DA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 25E541C82CFF3943003860DA /* RealmSwift */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		25B53D342D6DBFE200EA0A6D /* Register_RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register_RestaurantView.swift; path = Views/Screens/Register_RestaurantView.swift; sourceTree = "<group>"; };
 		25CA68102CCCD0F10010283A /* Food_ranking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_ranking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CA68132CCCD0F10010283A /* Food_rankingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_rankingApp.swift; sourceTree = "<group>"; };
 		25CA68202CCCD0F20010283A /* Food_rankingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Food_rankingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 		25CA68072CCCD0F10010283A = {
 			isa = PBXGroup;
 			children = (
+				25B53D342D6DBFE200EA0A6D /* Register_RestaurantView.swift */,
 				25CA68132CCCD0F10010283A /* Food_rankingApp.swift */,
 				25CA68402CCCD1120010283A /* Models */,
 				25CA68412CCCD1270010283A /* Views */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B53D352D6DBFE200EA0A6D /* Register_RestaurantView.swift in Sources */,
 				25CA68142CCCD0F10010283A /* Food_rankingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

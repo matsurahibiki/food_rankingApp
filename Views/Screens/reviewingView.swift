@@ -49,9 +49,6 @@ struct reviewingView: View {
                 }
             }
         }
-        .onTapGesture {
-            isFocused = false
-        }
     }
 
     // DishCard の削除処理

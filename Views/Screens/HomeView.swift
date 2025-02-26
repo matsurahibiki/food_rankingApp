@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     let topRankedItems = ["Croissant 1", "Croissant 2", "Croissant 3", "Croissant 4", "Croissant 5"]
     let recentImpressions = [
-        (UUID().uuidString, "Melon Pan", "愛知県20番地", "95/100"),
+        (UUID().uuidString, "Melon Pan", "愛知県小牧市古雅2丁目20番地", "95/100"),
         (UUID().uuidString, "Curry Bread", "Rich flavor with a hint of spice", "90/100"),
         (UUID().uuidString, "Melon Pan", "Crispy and sweet on the outside", "95/100"),
         (UUID().uuidString, "Curry Bread", "Rich flavor with a hint of spice", "90/100"),
@@ -123,8 +123,8 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
-//        ContentView()
+//        HomeView()
+        ContentView()
     }
 }
 
