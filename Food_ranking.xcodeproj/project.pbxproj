@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25B53D602D71DE2A00EA0A6D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 25B53D5F2D71DE2A00EA0A6D /* Alamofire */; };
+		25B53D632D71DF2000EA0A6D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 25B53D622D71DF2000EA0A6D /* SwiftyJSON */; };
 		25CA68142CCCD0F10010283A /* Food_rankingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CA68132CCCD0F10010283A /* Food_rankingApp.swift */; };
 		25CA68512CCCFEC40010283A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 25CA68502CCCFEC40010283A /* GoogleMobileAds */; };
+		25E541C92CFF3943003860DA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 25E541C82CFF3943003860DA /* RealmSwift */; };
+		25E541CA2CFF3943003860DA /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 25E541C82CFF3943003860DA /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		25AE467E2CFF3370006E2D8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25E541CA2CFF3943003860DA /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		25B53D342D6DBFE200EA0A6D /* Register_RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register_RestaurantView.swift; path = Views/Screens/Register_RestaurantView.swift; sourceTree = "<group>"; };
+		25B53D522D71A59E00EA0A6D /* hotpapper_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = hotpapper_api.swift; path = ViewModels/hotpapper_api.swift; sourceTree = "<group>"; };
 		25CA68102CCCD0F10010283A /* Food_ranking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_ranking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CA68132CCCD0F10010283A /* Food_rankingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_rankingApp.swift; sourceTree = "<group>"; };
 		25CA68202CCCD0F20010283A /* Food_rankingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Food_rankingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B53D602D71DE2A00EA0A6D /* Alamofire in Frameworks */,
+				25E541C92CFF3943003860DA /* RealmSwift in Frameworks */,
+				25B53D632D71DF2000EA0A6D /* SwiftyJSON in Frameworks */,
 				25CA68512CCCFEC40010283A /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +120,8 @@
 		25CA68072CCCD0F10010283A = {
 			isa = PBXGroup;
 			children = (
+				25B53D522D71A59E00EA0A6D /* hotpapper_api.swift */,
+				25B53D342D6DBFE200EA0A6D /* Register_RestaurantView.swift */,
 				25CA68132CCCD0F10010283A /* Food_rankingApp.swift */,
 				25CA68402CCCD1120010283A /* Models */,
 				25CA68412CCCD1270010283A /* Views */,
@@ -104,6 +129,7 @@
 				25CA68122CCCD0F10010283A /* Food_ranking */,
 				25CA68232CCCD0F20010283A /* Food_rankingTests */,
 				25CA682D2CCCD0F20010283A /* Food_rankingUITests */,
+				25E541C72CFF3943003860DA /* Frameworks */,
 				25CA68112CCCD0F10010283A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +144,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		25E541C72CFF3943003860DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +161,7 @@
 				25CA680C2CCCD0F10010283A /* Sources */,
 				25CA680D2CCCD0F10010283A /* Frameworks */,
 				25CA680E2CCCD0F10010283A /* Resources */,
+				25AE467E2CFF3370006E2D8D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +176,9 @@
 			name = Food_ranking;
 			packageProductDependencies = (
 				25CA68502CCCFEC40010283A /* GoogleMobileAds */,
+				25E541C82CFF3943003860DA /* RealmSwift */,
+				25B53D5F2D71DE2A00EA0A6D /* Alamofire */,
+				25B53D622D71DF2000EA0A6D /* SwiftyJSON */,
 			);
 			productName = Food_ranking;
 			productReference = 25CA68102CCCD0F10010283A /* Food_ranking.app */;
@@ -201,7 +238,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					25CA680F2CCCD0F10010283A = {
 						CreatedOnToolsVersion = 16.0;
@@ -227,6 +264,9 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				25CA684F2CCCFEC40010283A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				25AE46782CFF3358006E2D8D /* XCRemoteSwiftPackageReference "realm-swift" */,
+				25B53D5E2D71DE2A00EA0A6D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				25B53D612D71DF2000EA0A6D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 25CA68112CCCD0F10010283A /* Products */;
@@ -448,9 +488,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-ranking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,9 +522,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Hibiki-Matuura.Food-ranking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -598,21 +646,60 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		25AE46782CFF3358006E2D8D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.54.1;
+			};
+		};
+		25B53D5E2D71DE2A00EA0A6D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		25B53D612D71DF2000EA0A6D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
 		25CA684F2CCCFEC40010283A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 11.11.0;
+				minimumVersion = 11.12.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		25B53D5F2D71DE2A00EA0A6D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25B53D5E2D71DE2A00EA0A6D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		25B53D622D71DF2000EA0A6D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25B53D612D71DF2000EA0A6D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		25CA68502CCCFEC40010283A /* GoogleMobileAds */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 25CA684F2CCCFEC40010283A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		25E541C82CFF3943003860DA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25AE46782CFF3358006E2D8D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
