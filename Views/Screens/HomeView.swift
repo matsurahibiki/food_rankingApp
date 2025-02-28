@@ -10,8 +10,11 @@ import SwiftUI
 struct HomeView: View {
     let topRankedItems = ["Croissant 1", "Croissant 2", "Croissant 3", "Croissant 4", "Croissant 5"]
     let recentImpressions = [
+        (UUID().uuidString, "Melon Pan", "愛知県小牧市古雅2丁目20番地", "95/100"),
+        (UUID().uuidString, "Curry Bread", "Rich flavor with a hint of spice", "90/100"),
         (UUID().uuidString, "Melon Pan", "Crispy and sweet on the outside", "95/100"),
         (UUID().uuidString, "Curry Bread", "Rich flavor with a hint of spice", "90/100"),
+        (UUID().uuidString, "Melon Pan", "Crispy and sweet on the outside", "95/100"),
         (UUID().uuidString, "Melon Pan", "Crispy and sweet on the outside", "95/100"),
         (UUID().uuidString, "Curry Bread", "Rich flavor with a hint of spice", "90/100"),
         (UUID().uuidString, "Melon Pan", "Crispy and sweet on the outside", "95/100"),
@@ -26,7 +29,7 @@ struct HomeView: View {
                     Text("Ranking")
                     //                    .font(.custom("Plus Jakarta Sans", size: 22).weight(.bold))
                         .headingFont()
-                        .padding(EdgeInsets(top: 20, leading: 16, bottom: 2, trailing: 16))
+                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     Spacer()
                 }
 
@@ -54,7 +57,7 @@ struct HomeView: View {
                             .padding(16)
                             .background(Color.white)
                             .cornerRadius(12)
-                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 2, y: 2)
                             .onTapGesture {
                                 // ここにタップ時のイベントを記述
                                 print("ランキングがタップされました")
@@ -74,8 +77,8 @@ struct HomeView: View {
                         .padding(EdgeInsets(top: 4, leading: 16, bottom: 2, trailing: 16))
                     Spacer()
                 }
-                VStack {
-                    ScrollView(.vertical, showsIndicators: false) {
+                VStack () {
+                    ScrollView(.vertical, showsIndicators: true) {
                         ForEach(recentImpressions, id: \.0) { item in
                             HStack(alignment: .top, spacing: 0) {
                                 VStack(alignment: .leading, spacing: 5) {
@@ -92,7 +95,7 @@ struct HomeView: View {
                                         .background(Color(red: 0.96, green: 0.94, blue: 0.90))
                                         .cornerRadius(16)
                                 }
-                                .frame(width: UIScreen.main.bounds.width*0.6, height: UIScreen.main.bounds.height/10)
+                                .frame(width: UIScreen.main.bounds.width*0.6, height: UIScreen.main.bounds.height/10, alignment: .leading)
 
                                 Image(systemName: "fork.knife")  // フォークとナイフのシステムイメージを使用
                                     .resizable()
@@ -120,6 +123,7 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+//        HomeView()
         ContentView()
     }
 }
