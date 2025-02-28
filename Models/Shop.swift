@@ -28,20 +28,23 @@ class Shop_Realm: Object {
     }
 }
 
-class Shop: Identifiable, Codable {
-    var id = UUID()
-    var name: String
-    var genre: String
-    var address: String
-    var url: String
-    // 画像
+class Shop: Identifiable {
+    let id: String
+    let name: String
+    let genre: String
+    let location: String
+    let address: String
+    let url: String
+    //    var hours: String
+    var rating: Int
 
-    init(id: UUID = UUID(), name: String = "", genre: String = "その他", address: String = "", url: String = "") {
+    init(id: String, name: String, genre: String, location: String, rating: Int, address: String, url: String) {
         self.id = id
         self.name = name
         self.genre = genre
+        self.location = location
+        self.rating = rating
         self.address = address
         self.url = url
     }
 }
-
